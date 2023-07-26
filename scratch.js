@@ -13,3 +13,15 @@ function walkDOM2 (node) {
     }
 }
 
+function walkDOM3 (node) {
+    if (node.hasChildNodes()) {
+        for (let i = 0; i < node.childNodes.length; i++) {
+            console.log("Has child nodes");
+            console.log(node.childNodes[i]);
+        }
+    } else {
+        console.log("No child nodes");
+        console.log(node);
+    }
+}
+
